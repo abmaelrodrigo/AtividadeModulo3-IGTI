@@ -16,15 +16,11 @@ export default class InputFullSalary extends Component {
       discountIRPF: calculateSalaryFrom(1000).discountIRPF,
       netSalary: calculateSalaryFrom(1000).netSalary,
     };
-    //console.log('in' + this.input);
   }
 
   handleChanges = (event) => {
-    //console.log(event.target.value);
     const input = event.target.value;
 
-    //console.log(oi());
-    // console.log(calculateSalaryFrom(input));
     const baseINSS = calculateSalaryFrom(input).baseINSS;
     const baseIRPF = calculateSalaryFrom(input).baseIRPF;
     const discountINSS = calculateSalaryFrom(input).discountINSS;
